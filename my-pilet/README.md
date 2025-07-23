@@ -1,4 +1,4 @@
-# 📊 my-pilet – Senior React Developer Take-Home Test
+# 📊 my-pilet
 
 This project is a Piral microfrontend module (pilet) for the `my-app` Piral instance. It registers a **Dashboard** route and menu item, fetches posts from a public API, supports optimistic updates for adding posts, and provides a dedicated detail view for individual posts.
 
