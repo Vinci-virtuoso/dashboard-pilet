@@ -119,12 +119,6 @@ Local state is managed via `useReducer`, initialized with data from the Piral co
 
 Tailwind CSS is included via CDN in `injectTailwind.ts`. Styles are responsive and accessible.
 
-## 🧪 Testing
-
-Basic tests can be added using:
-
-- Jest
-
 ## 📌 Assumptions
 
 - Posts added are **not persisted** to the API (local only).
