@@ -2,8 +2,61 @@
 
 This project is a Piral microfrontend module (pilet) for the `my-app` Piral instance. It registers a **Dashboard** route and menu item, fetches posts from a public API, supports optimistic updates for adding posts, and provides a dedicated detail view for individual posts.
 
-## 🎯 Features
+## ✨ Features
 
+- ✅ **Piral Integration:** Registers a new page at `/dashboard` and a "Dashboard" menu item in the Piral shell.
+- ✅ **Paginated Data Display:** Fetches and displays a list of posts from the JSONPlaceholder API in a paginated view.
+- ✅ **Scalable Pagination:** Pagination control efficiently handles thousands of pages by rendering a dynamic window of page links.
+- ✅ **Efficient Data Fetching:** Only fetches data required for the current page, reducing load time and memory usage.
+- ✅ **Add New Item:** Users can add a new post via a form, which is optimistically added to the top of the list.
+- ✅ **Detail View:** Clicking an item navigates to a dedicated detail page.
+- ✅ **Performance Optimized:** The detail page fetches data only if navigated to directly; otherwise, post data is passed via router state to avoid redundant API calls.
+- ✅ **Lazy Loading:** The detail page component is lazy-loaded to keep the initial bundle size small.
+- ✅ **Reusable Components:** Built with generic, reusable components (`InputField`, `ItemCard`, `Pagination`, etc.).
+- ✅ **Robust Error Handling:** Both dashboard and detail pages feature explicit loading and error states for a better user experience.
+- ✅ **Accessibility:** Form inputs are correctly linked with labels for screen reader support.
+
+## 🛠️ Technical Stack
+
+- **Framework:** Piral
+- **Library:** React (v18, with Hooks)
+- **Language:** TypeScript (strict mode enabled)
+- **Styling:** Tailwind CSS (integrated via CDN)
+- **Routing:** React Router (v5)
+- **Build Tool:** Webpack 5 (via piral-cli)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or later recommended)
+- npm
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd <your-repo-folder>
+   ```
+
+2. **Install the Piral instance dependencies**  
+   (This step is only needed once to set up the emulator):
+   ```bash
+   cd my-app
+   npm install
+   cd ..
+   ```
+
+3. **Install the pilet dependencies:**
+   ```bash
+   cd my-pilet
+   npm install
+   ```
+
+### Running the Project
+
+Start the development server (with hot-reload):
 - ✅ **Piral Integration** via `app.createConnector()`
 - ✅ **Modern React** (hooks, functional components, `useReducer`)
 - ✅ **Reusable components** (`ItemCard`, `ItemList`, `AddItemForm`, etc.)
@@ -120,18 +173,5 @@ Local state is managed via `useReducer`, initialized with data from the Piral co
 Tailwind CSS is included via CDN in `injectTailwind.ts`. Styles are responsive and accessible.
 
 
-## 📌 Assumptions
-
-- Posts added are **not persisted** to the API (local only).
-- New post `id` values are generated with `Date.now()`.
-- Pagination logic can be extended via array slicing 
-- Assumes a running Piral shell or emulator for integration.
-
-## 📧 Submission
-
-To run against a custom feed:
-
-```bash
-npm start -- --target <feed-url>
 ```
 
