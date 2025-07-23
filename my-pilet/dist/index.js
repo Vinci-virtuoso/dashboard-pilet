@@ -1,3 +1,915 @@
 //@pilet v:2(webpackChunkpr_mypilet,{})
-System.register(["react","react-router-dom"],function(e,t){var r={},n={};return{setters:[function(e){r.createElement=e.createElement,r.default=e.default,r.lazy=e.lazy,r.useEffect=e.useEffect,r.useReducer=e.useReducer,r.useState=e.useState},function(e){n.Link=e.Link,n.NavLink=e.NavLink,n.useLocation=e.useLocation,n.useParams=e.useParams}],execute:function(){e((()=>{var e,a,o={126:(e,t,r)=>{const n=r(358).y;t.w=function(e){if(e||(e=1),!r.y.meta||!r.y.meta.url)throw console.error("__system_context__",r.y),Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");r.p=n(r.y.meta.url,e)}},358:(e,t,r)=>{function n(e,t){var r=document.createElement("a");r.href=e;for(var n="/"===r.pathname[0]?r.pathname:"/"+r.pathname,a=0,o=n.length;a!==t&&o>=0;){"/"===n[--o]&&a++}if(a!==t)throw Error("systemjs-webpack-interop: rootDirectoryLevel ("+t+") is greater than the number of directories ("+a+") in the URL path "+e);var l=n.slice(0,o+1);return r.protocol+"//"+r.host+l}t.y=n;var a=Number.isInteger||function(e){return"number"==typeof e&&isFinite(e)&&Math.floor(e)===e}},581:()=>{var e;(e=document.createElement("link")).rel="stylesheet",e.href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css",document.head.appendChild(e)},726:e=>{"use strict";e.exports=r},965:e=>{"use strict";e.exports=n}},l={};function i(e){var t=l[e];if(void 0!==t)return t.exports;var r=l[e]={exports:{}};return o[e](r,r.exports,i),r.exports}i.m=o,i.y=t,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"a3a52772.js",i.miniCssF=e=>{},i.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},a="pr_mypilet:",i.l=(t,r,n,o)=>{if(e[t])e[t].push(r);else{var l,u;if(void 0!==n)for(var c=document.getElementsByTagName("script"),s=0;s<c.length;s++){var d=c[s];if(d.getAttribute("src")==t||d.getAttribute("data-webpack")==a+n){l=d;break}}l||(u=!0,(l=document.createElement("script")).charset="utf-8",l.timeout=120,i.nc&&l.setAttribute("nonce",i.nc),l.setAttribute("data-webpack",a+n),l.src=t),e[t]=[r];var f=(r,n)=>{l.onerror=l.onload=null,clearTimeout(m);var a=e[t];if(delete e[t],l.parentNode&&l.parentNode.removeChild(l),a&&a.forEach(e=>e(n)),r)return r(n)},m=setTimeout(f.bind(null,void 0,{type:"timeout",target:l}),12e4);l.onerror=f.bind(null,l.onerror),l.onload=f.bind(null,l.onload),u&&document.head.appendChild(l)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},(()=>{var e;i.g.importScripts&&(e=i.g.location+"");var t=i.g.document;if(!e&&t&&(t.currentScript&&"SCRIPT"===t.currentScript.tagName.toUpperCase()&&(e=t.currentScript.src),!e)){var r=t.getElementsByTagName("script");if(r.length)for(var n=r.length-1;n>-1&&(!e||!/^http(s?):/.test(e));)e=r[n--].src}if(!e)throw new Error("Automatic publicPath is not supported in this browser");e=e.replace(/^blob:/,"").replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),i.p=e})(),(()=>{var e={57:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,a)=>n=e[t]=[r,a]);r.push(n[2]=a);var o=i.p+i.u(t),l=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;l.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",l.name="ChunkLoadError",l.type=a,l.request=o,n[1](l)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,l,u]=r,c=0;if(o.some(t=>0!==e[t])){for(n in l)i.o(l,n)&&(i.m[n]=l[n]);if(u)u(i)}for(t&&t(r);c<o.length;c++)a=o[c],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self.webpackChunkpr_mypilet=self.webpackChunkpr_mypilet||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var u,c,s,d={};return(0,i(126).w)(1),u=document,c=i.p+"main.css",(s=u.createElement("link")).setAttribute("data-origin","my-pilet"),s.type="text/css",s.rel="stylesheet",s.href=c,u.head.appendChild(s),(()=>{"use strict";i.r(d),i.d(d,{setup:()=>y});var e=i(726),t=i(965);const r=function(t){var r=t.label,n=t.value,a=t.onChange,o=t.textarea,l=t.placeholder;return e.default.createElement("div",null,e.default.createElement("label",{className:"block font-medium mb-1"},r),o?e.default.createElement("textarea",{value:n,onChange:function(e){return a(e.target.value)},placeholder:l,className:"w-full border p-2 rounded-md",rows:4}):e.default.createElement("input",{type:"text",value:n,onChange:function(e){return a(e.target.value)},placeholder:l,className:"w-full border p-2 rounded-md"}))};const n=function(t){var n=t.title,a=t.body,o=t.onTitleChange,l=t.onBodyChange,i=t.onAdd,u=t.disabled,c=void 0!==u&&u;return e.default.createElement("div",{className:"bg-white rounded-lg shadow p-4 w-full max-w-sm"},e.default.createElement("div",{className:"flex items-center mb-4"},e.default.createElement("h2",{className:"text-xl font-semibold"},"Add New Item")),e.default.createElement(r,{label:"Title",value:n,onChange:o,placeholder:"Enter item title..."}),e.default.createElement(r,{label:"Body",value:a,onChange:l,textarea:!0,placeholder:"Enter item description..."}),e.default.createElement("button",{onClick:i,disabled:c,className:"w-full py-2 bg-blue-500 text-white font-semibold rounded-lg disabled:opacity-50 disabled:cursor-not-allowed mt-4"},"Add Item"))};const a=function(t){var r=t.currentPage,n=t.totalPages,a=t.onPageChange,o=Array.from({length:n},function(e,t){return t+1});return e.default.createElement("div",{className:"flex items-center justify-center space-x-2 mt-4"},e.default.createElement("button",{onClick:function(){return a(r-1)},disabled:1===r,className:"px-3 py-1 border rounded disabled:opacity-50"},"Previous"),o.map(function(t){return e.default.createElement("button",{key:t,onClick:function(){return a(t)},className:"px-3 py-1 border rounded ".concat(t===r?"bg-black text-white":"bg-white")},t)}),e.default.createElement("button",{onClick:function(){return a(r+1)},disabled:r===n,className:"px-3 py-1 border rounded disabled:opacity-50"},"Next"))};var o=function(r){var n=r.post;return e.default.createElement(t.Link,{to:{pathname:"/dashboard/".concat(n.id),state:{post:n}}},e.default.createElement("div",{className:"p-4 bg-white rounded-lg shadow mb-4"},e.default.createElement("h2",{className:"text-xl font-bold mb-2"},n.title),e.default.createElement("p",{className:"text-gray-700"},n.body.substring(0,100),"...")))},l=function(t){var r=t.posts;return e.default.createElement("div",{className:"space-y-4"},r.map(function(t){return e.default.createElement(o,{key:t.id,post:t})}))};function u(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){var r=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=r){var n,a,o,l,i=[],u=!0,c=!1;try{if(o=(r=r.call(e)).next,0===t){if(Object(r)!==r)return;u=!1}else for(;!(u=(n=o.call(r)).done)&&(i.push(n.value),i.length!==t);u=!0);}catch(e){c=!0,a=e}finally{try{if(!u&&null!=r.return&&(l=r.return(),Object(l)!==l))return}finally{if(c)throw a}}return i}}(e,t)||s(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function c(e){return function(e){if(Array.isArray(e))return f(e)}(e)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||s(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function s(e,t){if(e){if("string"==typeof e)return f(e,t);var r={}.toString.call(e).slice(8,-1);return"Object"===r&&e.constructor&&(r=e.constructor.name),"Map"===r||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?f(e,t):void 0}}function f(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function m(e,t){switch(t.type){case"init":return t.posts;case"add":return[t.post].concat(c(e));default:return e}}var p=function(t){var r=t.data,o=u((0,e.useReducer)(m,r),2),i=o[0],c=o[1],s=u((0,e.useState)(""),2),d=s[0],f=s[1],p=u((0,e.useState)(""),2),b=p[0],h=p[1],y=u((0,e.useState)(1),2),v=y[0],g=y[1],w=Math.ceil(i.length/10),E=i.slice(10*(v-1),10*v);return e.default.createElement("div",{className:"max-w-full p-4"},e.default.createElement("h1",{className:"text-2xl font-bold mb-4"},"Dashboard"),e.default.createElement("div",{className:"flex flex-col lg:flex-row"},e.default.createElement("div",{className:"w-full mb-6 lg:mb-0 lg:mr-6 lg:w-1/3"},e.default.createElement(n,{title:d,body:b,onTitleChange:f,onBodyChange:h,onAdd:function(){var e={id:Date.now(),title:d,body:b};c({type:"add",post:e}),f(""),h("")},disabled:!d||!b})),e.default.createElement("div",{className:"flex-1"},e.default.createElement(l,{posts:E}),e.default.createElement(a,{currentPage:v,totalPages:w,onPageChange:g}))))},b=(i(581),e.lazy(function(){return i.e(985).then(i.bind(i,985))})),h="https://jsonplaceholder.typicode.com/posts";function y(r){var n=r.createConnector(function(){return fetch(h).then(function(e){return e.json()})});r.registerMenu(function(){return e.createElement(t.NavLink,{to:"/dashboard"},"Dashboard")}),r.registerPage("/dashboard",n(p)),r.registerPage("/dashboard/:id",b)}})(),d})())}}});
+System.register(["react","react-router-dom","tslib"], function(__WEBPACK_DYNAMIC_EXPORT__, __system_context__) {
+	var __WEBPACK_EXTERNAL_MODULE_react__ = {};
+	var __WEBPACK_EXTERNAL_MODULE_react_router_dom__ = {};
+	var __WEBPACK_EXTERNAL_MODULE_tslib__ = {};
+	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE_react__, "__esModule", { value: true });
+	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE_react_router_dom__, "__esModule", { value: true });
+	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE_tslib__, "__esModule", { value: true });
+	return {
+		setters: [
+			function(module) {
+				Object.keys(module).forEach(function(key) {
+					__WEBPACK_EXTERNAL_MODULE_react__[key] = module[key];
+				});
+			},
+			function(module) {
+				Object.keys(module).forEach(function(key) {
+					__WEBPACK_EXTERNAL_MODULE_react_router_dom__[key] = module[key];
+				});
+			},
+			function(module) {
+				Object.keys(module).forEach(function(key) {
+					__WEBPACK_EXTERNAL_MODULE_tslib__[key] = module[key];
+				});
+			}
+		],
+		execute: function() {
+			__WEBPACK_DYNAMIC_EXPORT__(
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/systemjs-webpack-interop/auto-public-path/auto-public-path.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/systemjs-webpack-interop/auto-public-path/auto-public-path.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+const resolveDirectory = (__webpack_require__(/*! ../public-path */ "./node_modules/systemjs-webpack-interop/public-path.js").resolveDirectory);
+
+exports.autoPublicPath = function autoPublicPath(rootDirLevel) {
+  if (!rootDirLevel) {
+    rootDirLevel = 1;
+  }
+
+  if (true) {
+    if (false) // removed by dead control flow
+{}
+
+    if (!__webpack_require__.y.meta || !__webpack_require__.y.meta.url) {
+      console.error("__system_context__", __webpack_require__.y);
+      throw Error(
+        "systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided"
+      );
+    }
+
+    __webpack_require__.p = resolveDirectory(
+      __webpack_require__.y.meta.url,
+      rootDirLevel
+    );
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/systemjs-webpack-interop/public-path.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/systemjs-webpack-interop/public-path.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+exports.setPublicPath = function setPublicPath(
+  systemjsModuleName,
+  rootDirectoryLevel
+) {
+  if (!rootDirectoryLevel) {
+    rootDirectoryLevel = 1;
+  }
+  if (
+    typeof systemjsModuleName !== "string" ||
+    systemjsModuleName.trim().length === 0
+  ) {
+    throw Error(
+      "systemjs-webpack-interop: setPublicPath(systemjsModuleName) must be called with a non-empty string 'systemjsModuleName'"
+    );
+  }
+
+  if (
+    typeof rootDirectoryLevel !== "number" ||
+    rootDirectoryLevel <= 0 ||
+    isNaN(rootDirectoryLevel) ||
+    !isInteger(rootDirectoryLevel)
+  ) {
+    throw Error(
+      "systemjs-webpack-interop: setPublicPath(systemjsModuleName, rootDirectoryLevel) must be called with a positive integer 'rootDirectoryLevel'"
+    );
+  }
+
+  var moduleUrl;
+  try {
+    moduleUrl = window.System.resolve(systemjsModuleName);
+    if (!moduleUrl) {
+      throw Error();
+    }
+  } catch (err) {
+    throw Error(
+      "systemjs-webpack-interop: There is no such module '" +
+        systemjsModuleName +
+        "' in the SystemJS registry. Did you misspell the name of your module?"
+    );
+  }
+
+  __webpack_require__.p = resolveDirectory(moduleUrl, rootDirectoryLevel);
+};
+
+function resolveDirectory(urlString, rootDirectoryLevel) {
+  // Our friend IE11 doesn't support new URL()
+  // https://github.com/single-spa/single-spa/issues/612
+  // https://gist.github.com/jlong/2428561
+
+  var a = document.createElement("a");
+  a.href = urlString;
+
+  var pathname = a.pathname[0] === "/" ? a.pathname : "/" + a.pathname;
+  var numDirsProcessed = 0,
+    index = pathname.length;
+  while (numDirsProcessed !== rootDirectoryLevel && index >= 0) {
+    var char = pathname[--index];
+    if (char === "/") {
+      numDirsProcessed++;
+    }
+  }
+
+  if (numDirsProcessed !== rootDirectoryLevel) {
+    throw Error(
+      "systemjs-webpack-interop: rootDirectoryLevel (" +
+        rootDirectoryLevel +
+        ") is greater than the number of directories (" +
+        numDirsProcessed +
+        ") in the URL path " +
+        urlString
+    );
+  }
+
+  var finalPath = pathname.slice(0, index + 1);
+
+  return a.protocol + "//" + a.host + finalPath;
+}
+
+exports.resolveDirectory = resolveDirectory;
+
+// borrowed from https://github.com/parshap/js-is-integer/blob/master/index.js
+var isInteger =
+  Number.isInteger ||
+  function isInteger(val) {
+    return typeof val === "number" && isFinite(val) && Math.floor(val) === val;
+  };
+
+
+/***/ }),
+
+/***/ "./src/components/AddItemForm.tsx":
+/*!****************************************!*\
+  !*** ./src/components/AddItemForm.tsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var _InputField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputField */ "./src/components/InputField.tsx");
+
+
+var AddItemForm = function AddItemForm(_ref) {
+  var title = _ref.title,
+    body = _ref.body,
+    onTitleChange = _ref.onTitleChange,
+    onBodyChange = _ref.onBodyChange,
+    onAdd = _ref.onAdd,
+    _ref$disabled = _ref.disabled,
+    disabled = _ref$disabled === void 0 ? false : _ref$disabled;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "bg-white rounded-lg shadow p-4 w-full max-w-sm"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "flex items-center mb-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("h2", {
+    className: "text-xl font-semibold"
+  }, "Add New Item")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(_InputField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    label: "Title",
+    value: title,
+    onChange: onTitleChange,
+    placeholder: "Enter item title..."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(_InputField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    label: "Body",
+    value: body,
+    onChange: onBodyChange,
+    textarea: true,
+    placeholder: "Enter item description..."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("button", {
+    onClick: onAdd,
+    disabled: disabled,
+    className: "w-full py-2 bg-blue-500 text-white font-semibold rounded-lg disabled:opacity-50 disabled:cursor-not-allowed mt-4"
+  }, "Add Item"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddItemForm);
+
+/***/ }),
+
+/***/ "./src/components/InputField.tsx":
+/*!***************************************!*\
+  !*** ./src/components/InputField.tsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+var InputField = function InputField(_ref) {
+  var label = _ref.label,
+    value = _ref.value,
+    _onChange = _ref.onChange,
+    textarea = _ref.textarea,
+    placeholder = _ref.placeholder;
+  var id = (0,react__WEBPACK_IMPORTED_MODULE_0__.useId)();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("label", {
+    htmlFor: id,
+    className: "block font-medium mb-1"
+  }, label), textarea ? (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("textarea", {
+    id: id,
+    value: value,
+    onChange: function onChange(e) {
+      return _onChange(e.target.value);
+    },
+    placeholder: placeholder,
+    className: "w-full border p-2 rounded-md",
+    rows: 4
+  })) : (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("input", {
+    id: id,
+    type: "text",
+    value: value,
+    onChange: function onChange(e) {
+      return _onChange(e.target.value);
+    },
+    placeholder: placeholder,
+    className: "w-full border p-2 rounded-md"
+  })));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InputField);
+
+/***/ }),
+
+/***/ "./src/components/ItemCard.tsx":
+/*!*************************************!*\
+  !*** ./src/components/ItemCard.tsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ItemCard: () => (/* binding */ ItemCard)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+
+
+var ItemCard = function ItemCard(_ref) {
+  var post = _ref.post;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: {
+      pathname: "/dashboard/".concat(post.id),
+      state: {
+        post: post
+      }
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "p-4 bg-white rounded-lg shadow mb-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("h2", {
+    className: "text-xl font-bold mb-2"
+  }, post.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("p", {
+    className: "text-gray-700"
+  }, post.body.substring(0, 100), "...")));
+};
+
+/***/ }),
+
+/***/ "./src/components/ItemList.tsx":
+/*!*************************************!*\
+  !*** ./src/components/ItemList.tsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ItemList: () => (/* binding */ ItemList)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var _ItemCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemCard */ "./src/components/ItemCard.tsx");
+
+
+var ItemList = function ItemList(_ref) {
+  var posts = _ref.posts;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "space-y-4"
+  }, posts.map(function (post) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(_ItemCard__WEBPACK_IMPORTED_MODULE_1__.ItemCard, {
+      key: post.id,
+      post: post
+    });
+  }));
+};
+
+/***/ }),
+
+/***/ "./src/components/Pagination.tsx":
+/*!***************************************!*\
+  !*** ./src/components/Pagination.tsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+var getPaginationRange = function getPaginationRange(currentPage, totalPages) {
+  var siblingCount = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+  var totalPageNumbers = siblingCount + 5;
+  if (totalPageNumbers >= totalPages) {
+    return Array.from({
+      length: totalPages
+    }, function (_, i) {
+      return i + 1;
+    });
+  }
+  var leftSiblingIndex = Math.max(currentPage - siblingCount, 1);
+  var rightSiblingIndex = Math.min(currentPage + siblingCount, totalPages);
+  var shouldShowLeftDots = leftSiblingIndex > 2;
+  var shouldShowRightDots = rightSiblingIndex < totalPages - 2;
+  var firstPageIndex = 1;
+  var lastPageIndex = totalPages;
+  if (!shouldShowLeftDots && shouldShowRightDots) {
+    var leftItemCount = 3 + 2 * siblingCount;
+    var leftRange = Array.from({
+      length: leftItemCount
+    }, function (_, i) {
+      return i + 1;
+    });
+    return [].concat(leftRange, ['...', totalPages]);
+  }
+  if (shouldShowLeftDots && !shouldShowRightDots) {
+    var rightItemCount = 3 + 2 * siblingCount;
+    var rightRange = Array.from({
+      length: rightItemCount
+    }, function (_, i) {
+      return totalPages - rightItemCount + 1 + i;
+    });
+    return [firstPageIndex, '...'].concat(rightRange);
+  }
+  if (shouldShowLeftDots && shouldShowRightDots) {
+    var middleRange = Array.from({
+      length: rightSiblingIndex - leftSiblingIndex + 1
+    }, function (_, i) {
+      return leftSiblingIndex + i;
+    });
+    return [firstPageIndex, '...'].concat(middleRange, ['...', lastPageIndex]);
+  }
+  return [];
+};
+var Pagination = function Pagination(_ref) {
+  var currentPage = _ref.currentPage,
+    totalPages = _ref.totalPages,
+    onPageChange = _ref.onPageChange;
+  var paginationRange = getPaginationRange(currentPage, totalPages);
+  if (currentPage === 0 || paginationRange.length < 2) {
+    return null;
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "flex items-center justify-center space-x-2 mt-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("button", {
+    onClick: function onClick() {
+      return onPageChange(currentPage - 1);
+    },
+    disabled: currentPage === 1,
+    className: "px-3 py-1 border rounded disabled:opacity-50"
+  }, "Previous"), paginationRange.map(function (page, index) {
+    if (typeof page === 'string') {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("span", {
+        key: "dots-".concat(index),
+        className: "px-3 py-1"
+      }, "...");
+    }
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("button", {
+      key: page,
+      onClick: function onClick() {
+        return onPageChange(page);
+      },
+      className: "px-3 py-1 border rounded ".concat(page === currentPage ? 'bg-black text-white' : 'bg-white')
+    }, page);
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("button", {
+    onClick: function onClick() {
+      return onPageChange(currentPage + 1);
+    },
+    disabled: currentPage === totalPages,
+    className: "px-3 py-1 border rounded disabled:opacity-50"
+  }, "Next"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pagination);
+
+/***/ }),
+
+/***/ "./src/injectTailwind.ts":
+/*!*******************************!*\
+  !*** ./src/injectTailwind.ts ***!
+  \*******************************/
+/***/ (() => {
+
+(function injectTailwind() {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+  document.head.appendChild(link);
+})();
+
+/***/ }),
+
+/***/ "./src/pages/DashboardPage.tsx":
+/*!*************************************!*\
+  !*** ./src/pages/DashboardPage.tsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DashboardPage: () => (/* binding */ DashboardPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var _components_AddItemForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/AddItemForm */ "./src/components/AddItemForm.tsx");
+/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Pagination */ "./src/components/Pagination.tsx");
+/* harmony import */ var _components_ItemList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/ItemList */ "./src/components/ItemList.tsx");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+
+
+
+
+function postsReducer(state, action) {
+  switch (action.type) {
+    case 'init':
+      return action.posts;
+    case 'add':
+      return [action.post].concat(_toConsumableArray(state));
+    default:
+      return state;
+  }
+}
+var DashboardPage = function DashboardPage(_ref) {
+  var data = _ref.data;
+  var _useReducer = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(postsReducer, data),
+    _useReducer2 = _slicedToArray(_useReducer, 2),
+    posts = _useReducer2[0],
+    dispatch = _useReducer2[1];
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState2 = _slicedToArray(_useState, 2),
+    title = _useState2[0],
+    setTitle = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState4 = _slicedToArray(_useState3, 2),
+    body = _useState4[0],
+    setBody = _useState4[1];
+  var handleSubmit = function handleSubmit() {
+    var newPost = {
+      id: Date.now(),
+      title: title,
+      body: body
+    };
+    dispatch({
+      type: 'add',
+      post: newPost
+    });
+    setTitle('');
+    setBody('');
+  };
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(1),
+    _useState6 = _slicedToArray(_useState5, 2),
+    currentPage = _useState6[0],
+    setCurrentPage = _useState6[1];
+  var postsPerPage = 10;
+  var totalPages = Math.ceil(posts.length / postsPerPage);
+  var displayedPosts = posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "max-w-full p-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("h1", {
+    className: "text-2xl font-bold mb-4"
+  }, "Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "flex flex-col lg:flex-row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "w-full mb-6 lg:mb-0 lg:mr-6 lg:w-1/3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(_components_AddItemForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: title,
+    body: body,
+    onTitleChange: setTitle,
+    onBodyChange: setBody,
+    onAdd: handleSubmit,
+    disabled: !title || !body
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement("div", {
+    className: "flex-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(_components_ItemList__WEBPACK_IMPORTED_MODULE_3__.ItemList, {
+    posts: displayedPosts
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["default"].createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    currentPage: currentPage,
+    totalPages: totalPages,
+    onPageChange: setCurrentPage
+  }))));
+};
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
+
+/***/ }),
+
+/***/ "react-router-dom":
+/*!***********************************!*\
+  !*** external "react-router-dom" ***!
+  \***********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE_react_router_dom__;
+
+/***/ }),
+
+/***/ "tslib":
+/*!************************!*\
+  !*** external "tslib" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE_tslib__;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/__system_context__ */
+/******/ 	(() => {
+/******/ 		__webpack_require__.y = __system_context__;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "" + "d85103c1" + ".js";
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get mini-css chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.miniCssF = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return undefined;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		var dataWebpackPrefix = "pr_mypilet:";
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 		
+/******/ 				script.src = url;
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			}
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"index": 0
+/******/ 		};
+/******/ 		
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if(true) { // all chunks have JS
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						}
+/******/ 					}
+/******/ 				}
+/******/ 		};
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 		
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunkpr_mypilet"] = self["webpackChunkpr_mypilet"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
+(() => {
+/*!*********************************************************************!*\
+  !*** ./node_modules/systemjs-webpack-interop/auto-public-path/1.js ***!
+  \*********************************************************************/
+const autoPublicPath = (__webpack_require__(/*! ./auto-public-path */ "./node_modules/systemjs-webpack-interop/auto-public-path/auto-public-path.js").autoPublicPath);
+
+autoPublicPath(1);
+
+})();
+
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
+(() => {
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/piral-cli-webpack5/lib/plugins/SheetLoader.js?cssName=main.css&piletName=my-pilet! ***!
+  \*********************************************************************************************************/
+var d=document;var u=__webpack_require__.p+"main.css";var e=d.createElement("link");e.setAttribute('data-origin', "my-pilet");e.type="text/css";e.rel="stylesheet";e.href=u+"?_="+Math.random();d.head.appendChild(e)
+})();
+
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+(() => {
+"use strict";
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   setup: () => (/* binding */ setup)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var _pages_DashboardPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/DashboardPage */ "./src/pages/DashboardPage.tsx");
+/* harmony import */ var _injectTailwind__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./injectTailwind */ "./src/injectTailwind.ts");
+/* harmony import */ var _injectTailwind__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_injectTailwind__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var DetailPage = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.lazy(function () {
+  return __webpack_require__.e(/*! import() */ "src_pages_DetailPage_tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/DetailPage */ "./src/pages/DetailPage.tsx"));
+});
+var apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+function setup(app) {
+  var connect = app.createConnector(function () {
+    return fetch(apiUrl).then(function (res) {
+      return res.json();
+    });
+  });
+  app.registerMenu(function () {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+      to: "/dashboard"
+    }, "Dashboard");
+  });
+  app.registerPage('/dashboard', connect(_pages_DashboardPage__WEBPACK_IMPORTED_MODULE_2__.DashboardPage));
+  app.registerPage('/dashboard/:id', DetailPage);
+}
+})();
+
+/******/ 	return __webpack_exports__;
+/******/ })()
+
+			);
+		}
+	};
+});
 //# sourceMappingURL=index.js.map

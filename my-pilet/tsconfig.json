@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "noImplicitAny": false,
     "removeComments": false,
     "noLib": false,
     "emitDecoratorMetadata": true,

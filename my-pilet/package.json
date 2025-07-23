@@ -5,6 +5,7 @@
   "keywords": [
     "pilet"
   ],
+  
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "^18",
