@@ -99,16 +99,16 @@ my-pilet/
    npm install -g piral-cli
    ```
 
-2. Install dependencies:
+2. Install pilet:
 
    ```bash
-   npm install
+   pilet new 
    ```
 
-3. Run in development mode (Piral emulator):
+3. Run in debug mode:
 
    ```bash
-   npm start
+   pilet debug
    ```
 
 4. Generate TypeScript declarations (post-install):
@@ -174,4 +174,3 @@ Tailwind CSS is included via CDN in `injectTailwind.ts`. Styles are responsive a
 
 
 ```
-
